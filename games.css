@@ -21,8 +21,6 @@ body {
   
 }
 
-
-
 .logo {
   margin-left: -50px;
 }
@@ -77,8 +75,20 @@ body {
   align-items: center;
   justify-content: center;
 }
-
-
+.hero-image {
+  border-right: 6px solid rgba(255, 255, 255, 0.3); 
+  border-bottom: 6px solid rgba(255, 255, 255, 0.3);
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.video-border {
+  border-right: 8px solid rgba(255, 255, 255, 0.3);  
+  border-bottom: 8px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid #000000;                           
+  border-left: 1px solid #000000;      
+  display: block;
+}
   .box img {
     width: 250px;
     height: auto;
@@ -143,7 +153,7 @@ body {
   padding: 0}
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 499px) {
 
   .nav a:hover {
     color: #ffffff;
@@ -159,7 +169,30 @@ body {
     display: none;}
 
 }
-@media screen and (min-width: 600px) {
+
+@media screen and (min-width: 700px) {
+    .header {
+    background-image: url("MK.gif");
+    height: 516px; 
+  }
+  .nav a:hover {
+    color: #ffffff;
+    background-color: #ff07a4;
+    width: 300px;
+    text-align: center;}       /* color when user hovers over it */
+    .container {
+    display: none;}
+    .nav{margin-top: 15px;}
+    .container1024 {
+    display: none;}
+
+}
+@media screen and (min-width: 800px){
+
+  .header {
+    background-image: url("Background_Header_600.gif");
+    height: 516px; 
+  }
   .nav {
     flex-direction: row;
     gap: 40px;
@@ -178,11 +211,20 @@ body {
     justify-content: space-around;
     min-width: 600px; 
     padding: 20px;
-    margin-top: 20px;}
-
+    margin-top: 20px;
+   justify-content: center;     /* Horizontal centering */
+    align-items: center;
+    gap: 40px;
+}
 }
 
 @media screen and (min-width: 1024px) {
+.header {
+    background-image: url("Background_Header.gif");
+    height: 576px; 
+  }
+  
+  
   .wrapper-1024 {
     width: 1024px;
     margin: 0 auto;}
@@ -199,6 +241,8 @@ body {
   }
    .container1024 {
     display: flex;
+    justify-content: center;     /* Horizontal centering */
+    align-items: center;
     justify-content: space-around;
     min-width: 600px; 
     padding: 20px;
