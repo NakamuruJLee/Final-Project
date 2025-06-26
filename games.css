@@ -3,65 +3,125 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  border: #000000 2px solid;}
 
 .header{
   display: flex;
   flex-direction: column;
   background-image: url("Background_Header.gif");
-  background-size: cover;       /* Scales image to cover the area */
-  background-position: center;  /* Centers the image */
-  background-repeat: no-repeat; /* Prevents tiling */
-  height: 596px;                /* Set a height so image is visible */
-  color: white;                 /* Optional: better text visibility */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 596px;
+  color: white;
   padding: 0;
   margin: 0;
   border: 0;
-  
+
 }
-.container {
-  display: flex;
-  justify-content: space-around;
-  min-width: 600px; 
-  overflow: yes;   
-  padding: 20px;
+#top3games {
+  display: block;
+  margin: 0 auto;
 }
+
 .logo {
   margin-left: -50px;
 }
 .nav {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  min-width: 600px; 
-  overflow: yes;   
-  padding: 0x;
-  gap: 20px;
+  min-width: 200px;
+  gap: 30px;
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
-  font-size: 22px;
-  color: #FFF;}
+  font-size: 18px;
+  color: #FFF;
+  margin: 0 auto;                
+}
 
   .nav a:link {
-  color: #ffffff;       /* default link color */
+  color: #ffffff;       
   text-decoration: none;}
   .nav a:visited {
-  color: #555555;       /* color after link has been visited */}
+  color: #555555;      
   .nav a:hover {
-  color: #ff07a4;       /* color when user hovers over it */
+  color: #ff07a4;       
   text-decoration: underline;}
   .nav a:active {
-  color: #555555;       /* color while link is being clicked */
+  color: #555555;       
 }
+
+.flex-container {
+  display: flex;
+  justify-content: space-around; 
+  padding: 20px;
+  background-color: #ffffff;
+  margin-top:50px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.box {
+  width: 275px;
+  height: auto;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+  .box img {
+    width: 250px;
+    height: auto;
+  }
+
+.styled-table {
+  width: 250px;              
+  border-collapse: collapse;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+.styled-table tbody tr:nth-child(2),
+.styled-table tbody tr:nth-child(4) {
+  background-color: #000000;
+  color: white; /* light gray */
+}
+.styled-table thead th {
+  background-color: black;
+  color: white;
+}
+
+.styled-table2 {
+  width: 250px;              
+  box-shadow: 0 0 8px rgba(135, 128, 128, 0.1);
+  font-family: Arial, sans-serif;
+  text-align: left;
+  text-indent: 10px;
+  margin-left: 15px;
+}
+
+
 .footer{
   display: flex;
   flex-direction: column;
   background-image: url("Footer-bg.gif");
-  background-size: cover;       /* Scales image to cover the area */
-  background-position: center;  /* Centers the image */
-  background-repeat: no-repeat; /* Prevents tiling */
-  height: 263px;                /* Set a height so image is visible */
-  color: white;                 /* Optional: better text visibility */
+  background-size: cover;      
+  background-position: center; 
+  background-repeat: no-repeat; 
+  height: 263px;               
+  color: white;               
   padding: 0;
   margin: 0;
   border: 0;
@@ -70,14 +130,62 @@
   display: flex;
   justify-content: space-around;
   min-width: 600px; 
-  overflow: yes;   
   padding: 0}
 }
 
+@media screen and (max-width: 599px) {
+
+  .nav a:hover {
+    color: #ffffff;
+    background-color: #ff07a4;
+    width: 300px;
+    text-align: center;}      
+    .container {
+    display: none;}
+    .nav{margin-top: 15px;}
+    .container1024 {
+    display: none;}
+
+}
+@media screen and (min-width: 600px) {
+  .nav {
+    flex-direction: row;
+    gap: 40px;
+    font-size: 20px;}
+  .container {
+    display: flex;
+    justify-content: space-around;
+    min-width: 600px; 
+    padding: 20px;}
+   .container1024 {
+    display: none;}
+
+}
 
 @media screen and (min-width: 1024px) {
   .wrapper-1024 {
     width: 1024px;
-    margin: 0 auto;
+    margin: 0 auto;}
+
+.nav {
+    gap: 50px;
+    font-size: 22px;
+    margin-top:10px}
+.container {
+    display: flex;
+    justify-content: space-around;
+    min-width: 600px; 
+    padding: 20px;
   }
+   .container1024 {
+    display: flex;
+    justify-content: space-around;
+    min-width: 600px; 
+    padding: 20px;
+    margin-top: 20px;}
+    
+    .container3 {
+    display: none;}
+    .Hero-600 {
+    display: none;}
 }

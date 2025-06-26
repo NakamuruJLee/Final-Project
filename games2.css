@@ -3,7 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  border: #000000 2px solid;}
 
 .header{
   display: flex;
@@ -20,7 +21,7 @@
   
 }
 
-}
+
 
 .logo {
   margin-left: -50px;
@@ -51,6 +52,65 @@
   .nav a:active {
   color: #555555;       /* color while link is being clicked */
 }
+
+.flex-container {
+  display: flex;
+  justify-content: space-around; /* or space-between/center */
+  padding: 20px;
+  background-color: #ffffff;
+  margin-top:50px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.box {
+  width: 275px;
+  height: auto;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+  .box img {
+    width: 250px;
+    height: auto;
+  }
+
+.styled-table {
+  width: 250px;              /* Set total table width */
+  border-collapse: collapse;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+.styled-table tbody tr:nth-child(2),
+.styled-table tbody tr:nth-child(4) {
+  background-color: #000000;
+  color: white; /* light gray */
+}
+.styled-table thead th {
+  background-color: black;
+  color: white;
+}
+
+.styled-table2 {
+  width: 250px;              /* Set total table width */
+  box-shadow: 0 0 8px rgba(135, 128, 128, 0.1);
+  font-family: Arial, sans-serif;
+  text-align: left;
+  text-indent: 10px;
+  margin-left: 15px;
+}
+
+
 .footer{
   display: flex;
   flex-direction: column;
@@ -81,6 +141,9 @@
     .container {
     display: none;}
     .nav{margin-top: 15px;}
+    .container1024 {
+    display: none;}
+
 }
 @media screen and (min-width: 600px) {
   .nav {
@@ -92,8 +155,9 @@
     justify-content: space-around;
     min-width: 600px; 
     padding: 20px;}
-    .container2 {
+   .container1024 {
     display: none;}
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -103,13 +167,23 @@
 
 .nav {
     gap: 50px;
-    font-size: 22px;}
+    font-size: 22px;
+    margin-top:10px}
 .container {
     display: flex;
     justify-content: space-around;
     min-width: 600px; 
     padding: 20px;
   }
-  .container2 {
+   .container1024 {
+    display: flex;
+    justify-content: space-around;
+    min-width: 600px; 
+    padding: 20px;
+    margin-top: 20px;}
+    
+    .container3 {
+    display: none;}
+    .Hero-600 {
     display: none;}
 }
