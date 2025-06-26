@@ -10,29 +10,27 @@ body {
   display: flex;
   flex-direction: column;
   background-image: url("Background_Header.gif");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 596px;
-  color: white;
+  background-size: cover;       /* Scales image to cover the area */
+  background-position: center;  /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling */
+  height: 596px;                /* Set a height so image is visible */
+  color: white;                 /* Optional: better text visibility */
   padding: 0;
   margin: 0;
   border: 0;
+  
+}
 
-}
-#top3games {
-  display: block;
-  margin: 0 auto;
-}
+
 
 .logo {
   margin-left: -50px;
 }
 .nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;        /* Stack items vertically */
+  align-items: center;           /* Center items horizontally */
+  justify-content: center;       /* Center items vertically (if height is set) */
   min-width: 200px;
   gap: 30px;
   font-family: "Roboto", sans-serif;
@@ -40,24 +38,24 @@ body {
   font-weight: 700;
   font-size: 18px;
   color: #FFF;
-  margin: 0 auto;                
+  margin: 0 auto;                /* Center the .nav block itself */
 }
 
   .nav a:link {
-  color: #ffffff;       
+  color: #ffffff;       /* default link color */
   text-decoration: none;}
   .nav a:visited {
-  color: #555555;      
+  color: #555555;       /* color after link has been visited */}
   .nav a:hover {
-  color: #ff07a4;       
+  color: #ff07a4;       /* color when user hovers over it */
   text-decoration: underline;}
   .nav a:active {
-  color: #555555;       
+  color: #555555;       /* color while link is being clicked */
 }
 
 .flex-container {
   display: flex;
-  justify-content: space-around; 
+  justify-content: space-around; /* or space-between/center */
   padding: 20px;
   background-color: #ffffff;
   margin-top:50px;
@@ -87,7 +85,7 @@ body {
   }
 
 .styled-table {
-  width: 250px;              
+  width: 250px;              /* Set total table width */
   border-collapse: collapse;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
@@ -104,7 +102,7 @@ body {
 }
 
 .styled-table2 {
-  width: 250px;              
+  width: 250px;              /* Set total table width */
   box-shadow: 0 0 8px rgba(135, 128, 128, 0.1);
   font-family: Arial, sans-serif;
   text-align: left;
@@ -117,11 +115,11 @@ body {
   display: flex;
   flex-direction: column;
   background-image: url("Footer-bg.gif");
-  background-size: cover;      
-  background-position: center; 
-  background-repeat: no-repeat; 
-  height: 263px;               
-  color: white;               
+  background-size: cover;       /* Scales image to cover the area */
+  background-position: center;  /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling */
+  height: 263px;                /* Set a height so image is visible */
+  color: white;                 /* Optional: better text visibility */
   padding: 0;
   margin: 0;
   border: 0;
@@ -139,7 +137,7 @@ body {
     color: #ffffff;
     background-color: #ff07a4;
     width: 300px;
-    text-align: center;}      
+    text-align: center;}       /* color when user hovers over it */
     .container {
     display: none;}
     .nav{margin-top: 15px;}
