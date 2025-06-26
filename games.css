@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.header{
+  display: flex;
+  flex-direction: column;
+  background-image: url("Background_Header.gif");
+  background-size: cover;       /* Scales image to cover the area */
+  background-position: center;  /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling */
+  height: 596px;                /* Set a height so image is visible */
+  color: white;                 /* Optional: better text visibility */
+  padding: 0;
+  margin: 0;
+  border: 0;
+  
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  min-width: 600px; 
+  overflow: yes;   
+  padding: 20px;
+}
+.logo {
+  margin-left: -50px;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  min-width: 600px; 
+  overflow: yes;   
+  padding: 0x;
+  gap: 20px;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 22px;
+  color: #FFF;}
+
+  .nav a:link {
+  color: #ffffff;       /* default link color */
+  text-decoration: none;}
+  .nav a:visited {
+  color: #555555;       /* color after link has been visited */}
+  .nav a:hover {
+  color: #ff07a4;       /* color when user hovers over it */
+  text-decoration: underline;}
+  .nav a:active {
+  color: #555555;       /* color while link is being clicked */
+}
+.footer{
+  display: flex;
+  flex-direction: column;
+  background-image: url("Footer-bg.gif");
+  background-size: cover;       /* Scales image to cover the area */
+  background-position: center;  /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling */
+  height: 263px;                /* Set a height so image is visible */
+  color: white;                 /* Optional: better text visibility */
+  padding: 0;
+  margin: 0;
+  border: 0;
+  
+.Foot-container {
+  display: flex;
+  justify-content: space-around;
+  min-width: 600px; 
+  overflow: yes;   
+  padding: 0}
+}
+
+
+@media screen and (min-width: 1024px) {
+  .wrapper-1024 {
+    width: 1024px;
+    margin: 0 auto;
+  }
+}
