@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 
 <body class="wrapper-1024">
@@ -43,12 +45,7 @@
       <a href="https://will-be-a-css-slideout-search.html"><img src="Search.png" alt="Search button"></a>
     </div>
   </div>
-<nav class="mobile-nav" id="mobileNav">
-  <a href="#">HOME</a>
-  <a href="#">PROS</a>
-  <a href="#">CONS</a>
-  <a href="#">TESTIMONIALS</a>
-</nav>
+
 
   <nav class="nav">
     <a href="index.html">HOME</a>
@@ -57,7 +54,24 @@
     <a href="Testimonials.html">TESTIMONIALS</a>
   </nav>
 
- 
+ <div class="mobile-nav" id="mobileNav" >
+  <button class="close-btn" onclick="document.getElementById('mobileNav').classList.remove('active')">✕</button>
+  <div class="mobile-links">
+    <hr class="thin-bar">
+    <a href="index.html">HOME</a>
+    <a href="Pros.html">PROS</a>
+    <a href="Cons.html">CONS</a>
+    <a href="Contact.html">CONTACT</a>
+    <a href="Testimonials.html">TESTIMONIALS</a>
+  </div>
+
+  <div class="mobile-search">
+    <input type="text" placeholder="Search..." />
+    <button type="submit">🔍</button>
+  </div>
+  <hr class="thin-bar">
+
+</div>
 
   <div class="container600">
     <img src="Hero-550.gif" alt="Hero image of angry gamer and peaceful gamer" class="hero-image"> 
@@ -223,7 +237,7 @@
         </table>
       </div> <!-- close box for MH table -->
     </div> <!-- close second column -->
-  </div> <!-- close flex-container -->
+  
 </main>
 
 <footer class="footer">
@@ -238,12 +252,18 @@
 </footer>
 <script>
   const hamburger = document.getElementById('hamburger');
-  const navMenu = document.getElementById('mobileNav');
+  const mobileNav = document.getElementById('mobileNav');
+  const closeBtn = document.querySelector('.close-btn');
 
   hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
+    mobileNav.classList.add('active');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    mobileNav.classList.remove('active');
   });
 </script>
+
 </body>
 
 </html>
