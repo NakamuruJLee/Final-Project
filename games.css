@@ -23,37 +23,39 @@ body {
 /* Hamburger icon */
 .hamburger {
   display: none;
-  font-size: 30px;
+  font-size: 40px;
   cursor: pointer;
-  color: #fff;
+  color: #fedd00;
   position: absolute;
   top: 20px;
   right: 20px;
   z-index: 999;
 }
 
-/* Mobile nav (hidden by default) */
-.mobile-nav {
+.hero-nav {
   display: none;
   flex-direction: column;
+  background-color: #222;
   position: absolute;
-  top: 60px;
-  right: 20px;
-  background-color: #000;
-  border: 2px solid #fff;
+  top: 60px; /* adjust as needed */
+  right: 0;
+  width: 200px;
   padding: 10px;
-  gap: 15px;
-  z-index: 999;
+  z-index: 1000;
 }
 
-.mobile-nav a {
+.hero-nav a {
   color: #fff;
+  padding: 10px 0;
   text-decoration: none;
-  font-size: 18px;
 }
 
-/* Mobile hover effects */
-.mobile-nav a:hover {
+.hero-nav.active {
+  display: flex;
+}
+
+/* hero hover effects */
+.hero-nav a:hover {
   color: #ff07a4;
   text-decoration: underline;
 }
@@ -107,10 +109,12 @@ body {
 }
 .hero-image {
   border-right: 5px solid #000000; 
-  border-bottom: 5px solid #000000);
+  border-bottom: 5px solid #000000;
   display: block;
   max-width: 100%;
   height: auto;
+  margin-top: 20px;
+
 }
 video {
   box-sizing: border-box;
@@ -206,14 +210,14 @@ video {
 }
 @media screen and (max-width: 399px) {
   .header {
-    height: 875px;
+    height: 700px;
     margin-bottom: 50px;
   }
 .hamburger {
     display: block;
   }
 
-  /* Hide the default nav for mobile */
+  /* Hide the default nav for hero */
   .nav {
     display: none;
   }
@@ -233,18 +237,7 @@ video {
     padding: 0;
   }
 
-  .nav {
-    flex-direction: column;
-    gap: 10px;
-    font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-  }
-
-  .nav a:hover {
-    color: #ff07a4;
-    text-align: center;
-  }
+ 
 
   .flex-row-400 {
     display: flex;
@@ -263,7 +256,7 @@ video {
     max-width: 200px;
     margin: 0 auto;
   }
- .nav-footer-mobile {
+ .nav-footer-hero {
     display: flex;
     width:100%;
     justify-content: center;
@@ -272,24 +265,116 @@ video {
     gap: 12px;
     margin-top: 40px;
     font-family: Arial, sans-serif;}
-.nav-footer-mobile a:link {
+.nav-footer-hero a:link {
   color: #ffffff; /* default link color */
   text-decoration: none;
 }
-
-.nav-footer-mobile a:visited {
-  color: #555555; /* visited link color */
+.thin-bar {
+  border: none;
+  width: 335px; 
+  height: 2px;
+  background-color: #000000;
+  margin-top:0px;
+  margin-bottom: 10px;
+}
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: fixed; /* Use fixed for full-screen overlay */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #d7c20d;
+  background-image: url("background-mobile-menu.gif");
+  z-index: 1000;
+  padding-top: 60px; /* Space for the close button */
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #000;
+  z-index: 1100;
 }
 
-.nav-footer-mobile a:hover {
-  color: #ff07a4; /* hover effect */
-  text-decoration: underline; /* optional hover style */
+.mobile-links {
+  margin-top: 20px; /* Pushes nav links down from the top */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.mobile-nav a:link,
+.mobile-nav a:visited,
+.mobile-nav a:hover,
+.mobile-nav a:active {
+  color: #000000;       /* Change to whatever default color you want */
+  text-decoration: none;
 }
 
-.nav-footer-mobile a:active {
-  color: ##555555; /* when actively clicking */
+.mobile-nav.active {
+  display: flex; /* Show the mobile navigation when the 'active' class is added */
 }
-  }
+
+/* Default unvisited link style */
+.mobile-nav a:link {
+  color: #000000;              /* Black or any color you want for default state */
+  text-decoration: none;
+}
+
+/* Hover state */
+.mobile-nav a:hover {
+  color: #ff07a4;              /* Pink on hover */
+  text-decoration: underline;
+}
+
+/* Visited state */
+.mobile-nav a:visited {
+  color: #7e6f0e;              /* Gray/brown for visited links */
+}
+
+/* Active (clicked) state */
+.mobile-nav a:active {
+  color: #7e6f0e;              /* Same as visited when being clicked */
+}
+.mobile-search {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.mobile-search input[type="text"] {
+  padding: 10px 15px;
+  font-size: 18px;
+  width: 250px;
+  border: 2px solid #000;
+  border-radius: 0px;
+  
+}
+
+.mobile-search button {
+  padding:0;
+  font-size: 16px; /* Increases icon size */
+  border: none;
+  background-color: #000;
+  color: #fff;
+  border-radius:0;
+  cursor: pointer;
+}
+}
 
 @media screen and (min-width: 400px) {
     .header {
