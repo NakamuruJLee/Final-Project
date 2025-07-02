@@ -200,21 +200,23 @@
     margin-bottom: 30px;
   }
 
-  .scroll-to-top {
-    position: fixed;
-    bottom: 22px;
-    right: 22px;
-    background-color: #ff07a4;
-    color: #fff;
-    border: none;
-    padding: 8px 14px;
-    border-radius: 50%;
-    font-size: 26px;
-    cursor: pointer;
-    display: none; /* hidden by default */
-    z-index: 999;
-    transition: opacity 0.3s ease;
-  }
+ .scroll-to-top {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  background-color: #ff07a4;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 50%;
+  font-size: 26px;
+  cursor: pointer;
+  display: none; /* hidden by default */
+  z-index: 999;
+  transition: opacity 0.3s ease;
+  /* Add this line: */
+  **touch-action: manipulation;**
+}
 
   .scroll-to-top:hover {
     background-color: #555;
