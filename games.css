@@ -23,7 +23,7 @@
   /* Hamburger icon */
   .hamburger {
     display: none;
-    font-size: 50px;
+    font-size: 40px;
     cursor: pointer;
     color: #fedd00;
     position: absolute;
@@ -397,7 +397,10 @@
     align-items: center;
     gap: 10px;
   }
-
+  .mobile-nav a:link,
+  .mobile-nav a:visited,
+  .mobile-nav a:hover,
+  .mobile-nav a:active {
     color: #000000;       /* Change to whatever default color you want */
     text-decoration: none;
   }
@@ -414,8 +417,7 @@
   /* Hover state */
   .mobile-nav a:hover {
     color: #ff07a4;              /* Pink on hover */
-    background-color: #000000;
-    width: 400px;
+    text-decoration: underline;
   }
 
   /* Visited state */
