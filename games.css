@@ -213,7 +213,7 @@
   cursor: pointer;
   display: none; /* hidden by default */
   z-index: 999;
-  transition: opacity 0.3s ease;
+  transition: opacity 0s ease;
   /* Add this line: */
   **touch-action: manipulation;**
 }
