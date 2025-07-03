@@ -7,17 +7,8 @@
     border: #000000 4px solid;}
 
 .header {
-  display: flex;
-  flex-direction: column;
   background-image: url("Background_Header.gif");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 596px; /* fallback height */
-  color: white;
-  padding: 0;
-  margin: 0;
-  border: 0;
+
 }
   /* Hamburger icon */
   .hamburger {
