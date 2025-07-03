@@ -607,7 +607,7 @@
   box-shadow: 2px 2px 4px #aaaaaa;
 }
 
-f screen and (min-width: 800px) and (max-width: 1023px) {
+@media screen and (min-width: 800px) and (max-width: 1023px) {
   .header {
     background-image: url("Background_Header_600.gif");
     height: 550px;
@@ -691,7 +691,7 @@ f screen and (min-width: 800px) and (max-width: 1023px) {
 @media screen and (min-width: 1024px) {
   .header {
     background-image: url("Background_Header.gif");
-    height: 65px;
+    height: 1000px;
   }
   }
     
