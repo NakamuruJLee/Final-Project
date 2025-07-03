@@ -200,7 +200,10 @@
     margin-bottom: 30px;
   }
 
- .scroll-to-top {
+ ./* games.css */
+/* ... (other CSS rules) ... */
+
+.scroll-to-top {
   position: fixed;
   bottom: 22px;
   right: 22px;
@@ -215,7 +218,11 @@
   z-index: 999;
   transition: opacity 0s ease;
   /* Add this line: */
-  **touch-action: manipulation;**
+  touch-action: manipulation;
+}
+
+/* ... (rest of your CSS rules) ... */
+
 }
 
   .mobile-footer-logo {
