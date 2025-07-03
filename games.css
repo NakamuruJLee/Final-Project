@@ -127,7 +127,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000000;
   width: 100%;
   height: 90px; /* or whatever height you need */
 }
@@ -334,7 +333,7 @@
       display: block;
     }
 
-    /* Hide the default nav for hero */
+  
     .nav {
       display: none;
     }
@@ -367,7 +366,7 @@
 
     main .center-img {
       width: 100%;
-      max-width: 200px;
+      max-width: 240px;
       margin: 0 auto;
     }
   .nav-footer-hero {
@@ -503,32 +502,51 @@
   }
 }
 
-  @media screen and (min-width: 600px) {
-      .header {
-      background-image: url("Background_Header_600.gif");
-      height: 580px; 
-    }
+@media screen and (min-width: 600px) {
+  .header {
+    background-image: url("background-header-600.gif");
+    height: 608px;
+    margin: 0 auto;
+    padding: 0;
+  }
     .container {
       display: flex;
       justify-content: space-between;
       min-width: 500px; 
       padding: 10px;
     }
+     .styled-table2 {             /* Set total table width */
+    width: 70%;
+    
+  }
     .logo-container {
     margin-left: 40px; /* Adjust this value as needed */
   }
-
+ .box img {
+  width: 70%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+    }
+.thin-bar-mobile {
+  border: none;
+  width: %;
+  height: 3px;
+  background-color: #7e6f0e;
+  margin: 45px auto;
+  box-shadow: 2px 2px 4px #aaaaaa;
+}
   .container600 {
       display: flex;
       justify-content: space-around;
       min-width: 600px; 
       padding: 0;
-      margin-top: 30px;
-    justify-content: center;     /* Horizontal centering */
+      margin-top: -75px;
+    
       align-items: center;
       gap: 20px;}
   .container600 img {
-      width:330px;}
+      width:420px;}
   .nav {
       flex-direction: row;
       gap: 40px;
@@ -552,15 +570,23 @@
      .mobile-search {display:none !important}
      .close-btn {display:none;}
      .social-icons {display:none;}
-     
+      .styled-table {
+                /* Set total table width */
+    border-collapse: collapse;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto; 
+  }
       }
 
   
   @media screen and (min-width: 800px){
 
     .header {
-      background-image: url("Background_Header_600.gif");
-      height: 550px;
+      background-image: url("Background_Header.gif");
+      height: 620px;
     }
     .nav {
       flex-direction: row;
@@ -590,7 +616,6 @@
 
       .container2 {
       display: none;}
-
 
       .flex-row {
     display: flex;
