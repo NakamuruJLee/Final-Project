@@ -459,7 +459,7 @@
     border-radius:0;
     cursor: pointer;
   }
-  .  .scroll-to-top {
+    .scroll-to-top {
     display: block;
   }
 }
@@ -468,7 +468,7 @@
   @media screen and (min-width: 400px) {
       .header {
       background-image: url("Background_Header_600.gif");
-      height: 390px; 
+      height: 820px; 
     }
 
     .nav a:hover {
@@ -479,7 +479,7 @@
       flex-direction: row;
       gap: 40px;
       font-size: 16px;}
-
+  
       
 
 
@@ -490,13 +490,16 @@
       padding: 20px;
     }
     
+    .container399 {
+      display: none;}
     .container {
       display: none;}
     .flex-row {
       display: none;}
       .container600 {
       display: none;}
-    
+    .mobile-nav{
+      display: none;}
       }
   
 
