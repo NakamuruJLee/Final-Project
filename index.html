@@ -11,7 +11,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-  <link rel="preload" as="image" href="facebook-hover.gif">
+  <link rel="preload" as="image" href="facebook-mobile-hover.gif">
+<link rel="preload" as="image" href="x-mobile-hover.gif">
+<link rel="preload" as="image" href="instagram-mobile-hover.gif">
+<link rel="preload" as="image" href="tik-tok-mobile-hover.gif">
 
 
 </head>
@@ -27,28 +30,67 @@
     <div class="hamburger" id="hamburger">
   &#9776;
 </div>
-  </div>
-  <div class="container">
-    <div class="contactpng">
-      <a href="mailto:jang@lee.com"><img src="Contact.png" alt="Contact button"></a>
-    </div>
-    <div>
-      <img src="Logo.png" alt="Logo for Game on/off" class="logo">
-    </div>
-    <div>
-      <a href="https://will-be-a-css-slideout-search.html"><img src="Search.png" alt="Search button"></a>
-    </div>
+</div>
+<div class="mobile-nav" id="mobileNav">
+  <button class="close-btn" onclick="document.getElementById('mobileNav').classList.remove('active')">✕</button>
+
+  <div class="mobile-links">
+    <hr class="thin-bar">
+    <a href="index.html">HOME</a>
+    <a href="Pros.html">PROS</a>
+    <a href="Cons.html">CONS</a>
+    <a href="Contact.html">CONTACT</a>  
+    <a href="Testimonials.html">TESTIMONIALS</a>
   </div>
 
-  <div class="container2">
-    <div class="logo-container"><img src="Logo.png" alt="Logo for Game on/off" class="logo"></div>
-    <div>
-      <a href="mailto:jang@lee.com"><img src="Contact.png" alt="Contact button"></a>
-    </div>
-    <div>
-      <a href="https://will-be-a-css-slideout-search.html"><img src="Search.png" alt="Search button"></a>
-    </div>
+  <div class="mobile-search">
+    <input type="text" placeholder="Search..." />
+    <button type="submit" class="search-button">
+      <img src="search-mobile-nav.gif" alt="Search icon" />
+    </button>
   </div>
+
+  <!-- Social icons OUTSIDE the mobile-search div -->
+  <div class="social-icons">
+    <a href="https://www.facebook.com" target="_blank">
+      <img
+        src="facebook-mobile.gif"
+        alt="facebook icon logo"
+        class="social-icon"
+        data-original="facebook-mobile.gif"
+        data-hover="facebook-mobile-hover.gif"
+      />
+    </a>
+    <a href="https://www.x.com" target="_blank">
+      <img
+        src="x-mobile.gif"
+        alt="x.com icon logo"
+        class="social-icon"
+        data-original="x-mobile.gif"
+        data-hover="x-mobile-hover.gif"
+      />
+    </a>
+    <a href="https://www.instagram.com" target="_blank">
+      <img
+        src="instagram-mobile.gif"
+        alt="instagram icon logo"
+        class="social-icon"
+        data-original="instagram-mobile.gif"
+        data-hover="instagram-mobile-hover.gif"
+      />
+    </a>
+    <a href="https://www.tiktok.com" target="_blank">
+      <img
+        src="tik-tok-mobile.gif"
+        alt="tiktok icon logo"
+        class="social-icon"
+        data-original="tik-tok-mobile.gif"
+        data-hover="tik-tok-mobile-hover.gif"
+      />
+    </a>
+  </div>
+</div>
+
 
 
   <nav class="nav">
@@ -77,24 +119,62 @@
   <button type="submit" class="search-button">
     <img src="search-mobile-nav.gif" alt="Search icon"  />
   </button>
+  <div class="social-icons">
+  <a href="https://www.facebook.com" target="_blank">
+    <img
+      src="facebook-mobile.gif"
+      alt="facebook icon logo"
+      class="social-icon"
+      data-original="facebook-mobile.gif"
+      data-hover="facebook-mobile-hover.gif"
+    />
+  </a>
+  <a href="https://www.x.com" target="_blank">
+    <img
+      src="x-mobile.gif"
+      alt="x.com icon logo"
+      class="social-icon"
+      data-original="x-mobile.gif"
+      data-hover="x-mobile-hover.gif"
+    />
+  </a>
+  <a href="https://www.instagram.com" target="_blank">
+    <img
+      src="instagram-mobile.gif"
+      alt="instagram icon logo"
+      class="social-icon"
+      data-original="instagram-mobile.gif"
+      data-hover="instagram-mobile-hover.gif"
+    />
+  </a>
+  <a href="https://www.tiktok.com" target="_blank">
+    <img
+      src="tik-tok-mobile.gif"
+      alt="tiktok icon logo"
+      class="social-icon"
+      data-original="tik-tok-mobile.gif"
+      data-hover="tik-tok-mobile-hover.gif"
+    />
+  </a>
 </div>
-
-  <div class="hamb-bg">
-    <div class="social-icons">
-      <a href="https://www.facebook.com" target="_blank">
-        <img src="facebook-mobile.gif" alt="facebook icon logo" id="facebook-icon">
-      </a>
-      <a href="https://www.x.com" target="_blank">
-        <img src="x-mobile.gif" alt="x.com icon logo" id="x-icon">
-      </a>
-      <a href="https://www.instagram.com" target="_blank">
-        <img src="instagram-mobile.gif" alt="instagram mobile icon logo" id="instagram-icon">
-      </a>
-      <a href="https://www.tiktok.com" target="_blank">
-        <img src="tik-tok-mobile.gif" alt="tiktok mobile icon logo" id="tiktok-icon">
-      </a>
-    </div>
   </div>
+
+    <div class="hamb-bg">
+      <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="facebook-mobile.gif" alt="facebook icon logo" class="facebook-icon">
+        </a>
+        <a href="https://www.x.com" target="_blank">
+          <img src="x-mobile.gif" alt="x.com icon logo" class="x-icon">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="instagram-mobile.gif" alt="instagram mobile icon logo" class="instagram-icon">
+        </a>
+        <a href="https://www.tiktok.com" target="_blank">
+          <img src="tik-tok-mobile.gif" alt="tiktok mobile icon logo" class="tiktok-icon">
+        </a>
+      </div>
+    </div>
 
 </div>
 
@@ -282,21 +362,46 @@
     <a href="Cons.html">CONS</a>
     <a href="Testimonials.html">TESTIMONIALS</a>
   </nav>
+<div class="social-icons">
+  <a href="https://www.facebook.com" target="_blank">
+    <img
+      src="facebook-mobile.gif"
+      alt="Facebook icon"
+      class="social-icon"
+      data-original="facebook-mobile.gif"
+      data-hover="facebook-mobile-hover.gif"
+    />
+  </a>
+  <a href="https://www.x.com" target="_blank">
+    <img
+      src="x-mobile.gif"
+      alt="X icon"
+      class="social-icon"
+      data-original="x-mobile.gif"
+      data-hover="x-mobile-hover.gif"
+    />
+  </a>
+  <a href="https://www.instagram.com" target="_blank">
+    <img
+      src="instagram-mobile.gif"
+      alt="Instagram icon"
+      class="social-icon"
+      data-original="instagram-mobile.gif"
+      data-hover="instagram-mobile-hover.gif"
+    />
+  </a>
+  <a href="https://www.tiktok.com" target="_blank">
+    <img
+      src="tik-tok-mobile.gif"
+      alt="TikTok icon"
+      class="social-icon"
+      data-original="tik-tok-mobile.gif"
+      data-hover="tik-tok-mobile-hover.gif"
+    />
+  </a>
+</div>
+ 
 
-  <div class="social-icons">
-    <a href="https://www.facebook.com" target="_blank">
-      <img src="facebook-mobile.gif" alt="facebook icon logo" id="facebook-icon">
-    </a>
-    <a href="https://www.x.com" target="_blank">
-      <img src="x-mobile.gif" alt="x.com icon logo" id="x-icon">
-    </a>
-    <a href="https://www.instagram.com" target="_blank">
-      <img src="instagram-mobile.gif" alt="instagram mobile icon logo" id="instagram-icon">
-    </a>
-    <a href="https://www.tiktok.com" target="_blank">
-      <img src="tik-tok-mobile.gif" alt="tiktok mobile icon logo" id="tiktok-icon">
-    </a>
-  </div>
 
   <div class="copyright">
     <p>&copy; 2024 Game On/Off</p>
@@ -320,59 +425,18 @@
     mobileNav.classList.remove('active');
   });
 
-  // Facebook icon hover
-  const fbIcon = document.getElementById('facebook-icon');
-  if (fbIcon) {
-    fbIcon.addEventListener('mouseover', () => {
-      fbIcon.src = 'facebook-mobile-hover.gif';
-    });
-    fbIcon.addEventListener('mouseout', () => {
-      fbIcon.src = 'facebook-mobile.gif';
-    });
-  }
+  document.querySelectorAll('.social-icon').forEach(icon => {
+  icon.addEventListener('mouseover', () => {
+    const hoverSrc = icon.getAttribute('data-hover');
+    if (hoverSrc) icon.src = hoverSrc;
+  });
 
-  // X.com icon hover
-  const xIcon = document.getElementById('x-icon');
-  if (xIcon) {
-    xIcon.addEventListener('mouseover', () => {
-      xIcon.src = 'x-mobile-hover.gif';
-    });
-    xIcon.addEventListener('mouseout', () => {
-      xIcon.src = 'x-mobile.gif';
-    });
-  }
-
-  // Instagram icon hover
-  const instagramIcon = document.getElementById('instagram-icon');
-  if (instagramIcon) {
-    instagramIcon.addEventListener('mouseover', () => {
-      instagramIcon.src = 'instagram-mobile-hover.gif';
-    });
-    instagramIcon.addEventListener('mouseout', () => {
-      instagramIcon.src = 'instagram-mobile.gif';
-    });
-  }
-
-  // TikTok icon hover
-  const tiktokIcon = document.getElementById('tiktok-icon');
-  if (tiktokIcon) {
-    tiktokIcon.addEventListener('mouseover', () => {
-      tiktokIcon.src = 'tik-tok-mobile-hover.gif';
-    });
-    tiktokIcon.addEventListener('mouseout', () => {
-      tiktokIcon.src = 'tik-tok-mobile.gif';
-    });
-  }
-
-  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 300) {
-    scrollToTopBtn.style.display = "block";
-  } else {
-    scrollToTopBtn.style.display = "none";
-  }
+  icon.addEventListener('mouseout', () => {
+    const originalSrc = icon.getAttribute('data-original');
+    if (originalSrc) icon.src = originalSrc;
+  });
 });
+
 
 scrollToTopBtn.addEventListener("click", () => {
   window.scrollTo({
