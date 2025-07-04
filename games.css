@@ -584,31 +584,31 @@
   
   @media screen and (min-width: 800px){
 
-     .container {
-    display: none;
-  }
-  .header {
-    background-image: url("Background_Header.gif");
-    height: 650px;
-  }
-  .nav {
-    flex-direction: row;
-    gap: 40px;
-    font-size: 23px;
-    margin-top: -5px;
+    .header {
+      background-image: url("Background_Header.gif");
+      height: 620px;
+    }
+    .nav {
+      flex-direction: row;
+      gap: 40px;
+      font-size: 23px;
+      margin-top: -5px;
+      }
 
-      .container600 {
-      display: none;}
-    .flex-row-400  {
-      display: none;}
+  .container {
+      display: flex;
+      justify-content: space-between;
+      min-width: 600px; 
+      padding: 20px;
+    }
 
       .nav {
       flex-direction: row;
       gap: 40px;
       font-size: 20px;}
 
-    
-
+      .container2 {
+      display: none;}
 
       .flex-row {
     display: flex;
@@ -726,3 +726,6 @@
       display: none;}
       .container600 {
       display: none;}
+
+
+
