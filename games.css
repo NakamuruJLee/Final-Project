@@ -604,7 +604,13 @@
     .wrapper-1024 {
       width: 1024px;
       margin: 0 auto;}
-
+.styled-table2 {
+  background-color: #f0ecec; /* light gray */
+  padding: 8px;
+  border-right: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); /* soft shadow */
+}
   .nav {
       gap: 50px;
       font-size: 22px;
