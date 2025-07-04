@@ -13,7 +13,7 @@
     background-size: cover;       /* Scales image to cover the area */
     background-position: center;  /* Centers the image */
     background-repeat: no-repeat; /* Prevents tiling */
-    height: 596px;                /* Set a height so image is visible */
+    min-height: 400px;                /* Set a height so image is visible */
     color: white;                 /* Optional: better text visibility */
     padding: 0;
     margin: 0;
@@ -316,12 +316,13 @@
   .hamburger {
     font-size: 45px;
   }
+  .flex-row {display: none}
 }
 @media screen and (min-width: 400px) and (max-width: 599px) {
   .hamburger {
     font-size: 55px;
   }
-  
+  .flex-row {display: none}
 }
   @media screen and (max-width: 599px) {
     .header {
@@ -338,7 +339,7 @@
       display: none;
     }
     .container,
-    .flex-row,
+    
     .container2,
     .container600 {
       display: none;
@@ -509,6 +510,7 @@
     margin: 0 auto;
     padding: 0;
   }
+    .flex-row {display: none}
     .container {
       display: flex;
       justify-content: space-between;
@@ -558,8 +560,7 @@
       .container2 {
       display:none;
       }
-      .flex-row  {
-      display: none;}
+      
         .flex-row-400  {
       display: none;}
         .container399 {
@@ -584,47 +585,62 @@
   
   @media screen and (min-width: 800px){
 
-    .header {
-      background-image: url("Background_Header.gif");
-      height: 620px;
-    }
-    .nav {
-      flex-direction: row;
-      gap: 40px;
-      font-size: 23px;
-      margin-top: -5px;
-      }
-
-  .container {
-      display: flex;
-      justify-content: space-between;
-      min-width: 600px; 
-      padding: 20px;
-    }
-
-      .nav {
-      flex-direction: row;
-      gap: 40px;
-      font-size: 20px;}
-
-      .container2 {
-      display: none;}
-
-      .flex-row {
+  .header {
+  background-image: url("background-header-800.gif");
+  background-size: 100% 100%;     /* Stretches image to fill both width and height */
+  background-repeat: no-repeat;   /* Prevents tiling */
+  background-position: center;    /* Keeps image centered */
+  height: 540px;
+  padding: 0;
+  margin: 0;
+}
+.nav {
+  flex-direction: row;
+  gap: 40px;
+  font-size: 23px;
+  margin-top: -5px;
+  margin-bottom: 40px; /* ✅ Pushes .flex-row down */
+}
+ .column {
     display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    gap: 20px;
+    flex-direction: row;
+    gap: 10px;
+    width: 775px;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    min-width: 600px;
+    padding: 20px;
   }
 
+    .nav {
+    flex-direction: row;
+    gap: 40px;
+    font-size: 20px;}
+
+    .container2 {
+    display: none;}
+
+    .flex-row { 
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+  }
+.flex-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 60px; /* Increase this to push it down more */
+  }
   .column-one {
-    display: flex;   
+    display: flex;
     width: 525px;
     background-color: rgb(208, 255, 36);
     padding:0px;
     height: 280px;
-      justify-content: center;   /* horizontal center */
-    align-items: center; 
+      justify-content: center;
+    align-items: center;
 
   }
 
@@ -634,15 +650,15 @@
     display: block;
   }
   .column-two {
-    width:230px; 
+    width:230px;
     display: flex;
     flex-direction: column; /* makes nested items stack vertically */
 
     background-color: rgb(39, 247, 236);
     padding: 0px;
     height: 280px;
-      justify-content: center;   /* horizontal center */
-    align-items: center; 
+      justify-content: center;
+    align-items: center;
   }
 
   .column-one video {
@@ -659,7 +675,7 @@
   @media screen and (min-width: 1024px) {
   .header {
       background-image: url("Background_Header.gif");
-      height: 565px; 
+      height: 565px;
     }
   }
 
@@ -674,24 +690,24 @@
   .container {
       display: flex;
       justify-content: space-around;
-      min-width: 600px; 
+      min-width: 600px;
       padding: 20px;
     }
         .flex-row {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: -20px; /* Adjust this value as needed */
     gap: 20px;
   }
 
   .column-one {
-    display: flex;   
+    display: flex;
     width: 620px;
-    background-color: rgb(208, 255, 36);
+    background-color:transparent;
     padding:0px;
     height: 310px;
-      justify-content: center;   /* horizontal center */
-    align-items: center; 
+      justify-content: center;
+    align-items: center;
 
   }
 
@@ -701,16 +717,16 @@
     display: block;
   }
   .column-two {
-    width:230px; 
+    width:230px;
     display: flex;
     gap:10px;
     flex-direction: column; /* makes nested items stack vertically */
 
-    background-color: rgb(39, 247, 236);
+    background-color:transparent;
     padding: 0px;
     height: 310px;
-    justify-content: center;   /* horizontal center */
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
   }
 
   .column-one video {
@@ -726,6 +742,4 @@
       display: none;}
       .container600 {
       display: none;}
-
-
-
+}
