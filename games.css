@@ -585,7 +585,7 @@
   @media screen and (min-width: 800px) {
   .header {
       background-image: url("Background_Header.gif");
-      height: 565px;
+      height: 575px;
     }
   .column {
     display: flex;
@@ -618,7 +618,7 @@
         .flex-row {
     display: flex;
     justify-content: center;
-    margin-top: -20px; /* Adjust this value as needed */
+    margin-top: 20px; /* Adjust this value as needed */
     gap: 20px;
   }
 
