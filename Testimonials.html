@@ -14,7 +14,128 @@
     <link rel="preload" as="image" href="x-mobile-hover.gif">
     <link rel="preload" as="image" href="instagram-mobile-hover.gif">
     <link rel="preload" as="image" href="tik-tok-mobile-hover.gif">
+ <style>
+  .feedback-form {
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 2px solid #fff;
+  border-radius: 8px;
+}
 
+.feedback-form label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form select,
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  background: #222;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.feedback-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.feedback-form small {
+  color: #ccc;
+}
+
+.feedback-form button {
+  background-color: #fff;
+  color: #000;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.feedback-form button:hover {
+  background-color: #ff07a4;
+  color: #fff;
+}
+
+.feedback-form input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 480px) {
+  .feedback-form {
+    padding: 10px;
+  }
+.img-center-wrapper {
+  display: flex;
+  justify-content: center; /* horizontal centering */
+
+  /* If you want it to take the full viewport height: */
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+.header {
+  height: 530px;
+}
+.mobile-community {
+  max-width: 100%;
+  height: 356px;
+  margin-top:10px;
+}
+}
+@media screen and (min-width: 481px) {
+  .img-center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobile-community {
+    width: 356px;
+    height: 356px;
+    margin: 10px 0 0 0;
+  }
+
+  .header {
+    height: 545px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .img-center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobile-community {
+    width: 356px;
+    height: 356px;
+    margin: 10px 0 0 0;
+  }
+
+  .header {
+    height: 645px;
+  }
+}
+
+ </style>
 
   </head>
 
@@ -35,7 +156,7 @@
     <button class="close-btn" onclick="document.getElementById('mobileNav').classList.remove('active')">✕</button>
 <div class="container">
     <div class="contactpng">
-      <a href="contact.html"><img src="Contact.png" alt="Contact button"></a>
+      <a href="mailto:jang@lee.com"><img src="Contact.png" alt="Contact button"></a>
     </div>
     <div>
       <img src="Logo.png" alt="Logo for Game on/off" class="logo">
@@ -48,7 +169,7 @@
   <div class="container2">
     <div class="logo-container"><img src="Logo.png" alt="Logo for Game on/off" class="logo"></div>
     <div>
-      <a href="contact.html"><img src="Contact.png" alt="Contact button"></a><img src="Contact.png" alt="Contact button"></a>
+      <a href="mailto:jang@lee.com"><img src="Contact.png" alt="Contact button"></a>
     </div>
     <div>
       <a href="https://will-be-a-css-slideout-search.html"><img src="Search.png" alt="Search button"></a>
@@ -121,22 +242,20 @@
       <a href="Cons.html">CONS</a>
       <a href="Testimonials.html">TESTIMONIALS</a>
     </nav>
-<div class="flex-row">
-    <div class="column-one">
-      <img src="Hero-1024F.gif" alt="Hero image of angry gamer and peaceful gamer" class="hero-image"> 
+
+    <div ">
+      <div class="img-center-wrapper">
+  <img
+    src="form-group-mobile.gif"
+    alt="community"
+    class="mobile-community"
+  >
+</div>
     </div>
-    <div class="column-two">
-      <div class="nested-item"><video width="225" height="125" class="video-border" controls poster="thumbnail.jpg">
-        <source src="angry-player.mp4" type="video/mp4">
-      </video></div>
-      <div class="nested-item"><video width="225" height="125" class="video-border" controls poster="thumbnail.jpg">
-        <source src="angry-player2.mp4" type="video/mp4" >
-      </video></div>
-    </div>
-  </div>
+
   <div class="mobile-nav" id="mobileNav" >
     <button class="close-btn" onclick="document.getElementById('mobileNav').classList.remove('active')">✕</button>
-    <div class="mobile-links">
+    <div class="mobile-links">c
       <hr class="thin-bar">
       <a href="index.html">HOME</a>
       <a href="Pros.html">PROS</a>
@@ -210,165 +329,58 @@
         </div>
       </div>
 
-  </div>
-
-    <div class="container600">
-      <img src="Hero-550.gif" alt="Hero image of angry gamer and peaceful gamer" class="hero-image"> 
-      <video width="225" height="140" class="video-border" controls poster="thumbnail.jpg">
-        <source src="angry-player.mp4" type="video/mp4">
-      </video>
-    </div>
-
-  <div class="flex-row-400">
-    <div class="column-one">
-      <img src="Hero-550.gif" alt="Hero image of angry gamer and peaceful gamer" class="hero-image"> 
-    </div>
-    <div class="column-two">
-      <div class="nested-item">
-        <video width="345" height="200" class="video-border" controls poster="thumbnail.jpg">
-        <source src="angry-player.mp4" type="video/mp4">
-      </video></div>
-
-    </div>
-
+  
     
 
   </header>
 
   <main>
-    <div class="center-img">
-      <img src="top-games.gif" alt="Top games animation">
-    </div>
+    <form class="feedback-form" action="#" method="post">
+  <label>
+    <input type="checkbox" name="anonymous"> Submit anonymously
+  </label>
 
-    <div class="class="column-wrapper"">
-      <div class="column">
-        <div class="box">
-          <img src="MK.gif" alt="Mario Kart World">
-        </div>
+  <div class="form-group">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required>
+  </div>
 
-        <table class="styled-table2">
-          <tr>
-            <td>Mario Kart World offers an exciting, colorful racing adventure packed with fun challenges and unforgettable moments.</td>
-          </tr>
-        </table>
+  <div class="form-group">
+    <label for="lastInitial">Last Name Initial:</label>
+    <input type="text" id="lastInitial" name="lastInitial" maxlength="1" required>
+  </div>
 
-        <div class="box">
-          <table class="styled-table">
-            <thead>
-              <tr>
-                <th>Genre</th>
-                <th>Price</th>
-                <th>Developer</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Race</td>
-                <td>74.99$</td>
-                <td>Nintendo</td>
-              </tr>
-              <tr>
-                <td>Rating</td>
-                <td>Platform</td>
-                <td>Release Date</td>
-              </tr>
-              <tr>
-                <td>Everyone</td>
-                <td>Nintendo Switch 2</td>
-                <td>06/05/2025</td>
-              </tr>
-            </tbody>
-          </table>
-        </div> <!-- close box for MK table -->
-      </div> <!-- close first column -->
-  <hr class="thin-bar-mobile">
-      <div class="column">
-        <div class="box">
-          <img src="MH.gif" alt="Monster Hunter Wild">
-        </div>
+  <div class="form-group">
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+      <option value="">-- Select Country --</option>
+      <option value="United States">United States</option>
+      <option value="India">India</option>
+      <option value="China">China</option>
+      <option value="Brazil">Brazil</option>
+      <option value="Indonesia">Indonesia</option>
+      <option value="Russia">Russia</option>
+      <option value="Japan">Japan</option>
+      <option value="Mexico">Mexico</option>
+      <option value="Germany">Germany</option>
+      <option value="United Kingdom">United Kingdom</option>
+      <option value="Other">Other</option>
+    </select>
+  </div>
 
-        <table class="styled-table2">
-          <tr>
-            <td>Monster Hunter World delivers an epic, immersive hunting experience with breathtaking environments and exhilarating gameplay that keeps players coming back for more.</td>
-          </tr>
-        </table>
+  <div class="form-group">
+    <label for="email">Email (optional):</label>
+    <input type="email" id="email" name="email">
+  </div>
 
-        <div class="box">
-          <table class="styled-table">
-            <thead>
-              <tr>
-                <th>Genre</th>
-                <th>Price</th>
-                <th>Developer</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Action RPG</td>
-                <td>69.99$</td>
-                <td>Capcom</td>
-              </tr>
-              <tr>
-                <td>Rating</td>
-                <td>Platform</td>
-                <td>Release Date</td>
-              </tr>
-              <tr>
-                <td>Teen</td>
-                <td>PS5, Xbox <br>series, PC</td>
-                <td>02/28/2025</td>
-              </tr>
-            </tbody>
-          </table>
-        </div> <!-- close box for MH table -->
-      </div> <!-- close second column -->
-    </div> <!-- close flex-container -->
-    <hr class="thin-bar-mobile">
-    <div class="column">
-        <div class="box">
-          <img src="Doom.gif" alt="Doom Dark Ages thumbnails">
-        </div>
+  <div class="form-group">
+    <label for="comment">Comment (150 words max):</label>
+    <textarea id="comment" name="comment" maxlength="1500" placeholder="Your comment here..."></textarea>
+    <small>(Approx. 150 words)</small>
+  </div>
 
-        <table class="styled-table2">
-          <tr>
-            <td>Doom: The Dark Ages is a jaw-dropping, blood-soaked masterpiece
-              that reimagines the iconic franchise with brutal medieval flair
-                and relentless, heavy-metal energy. Every moment oozes power, 
-                blending gritty combat with epic atmosphere in a way only Doom 
-                can.</td>
-          </tr>
-        </table>
-
-        <div class="box">
-          <table class="styled-table">
-            <thead>
-              <tr>
-                <th>Genre</th>
-                <th>Price</th>
-                <th>Developer</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>FPS</td>
-                <td>69.99$</td>
-                <td>ID Software</td>
-              </tr>
-              <tr>
-                <td>Rating</td>
-                <td>Platform</td>
-                <td>Release Date</td>
-              </tr>
-              <tr>
-                <td>M Mature 17+</td>
-                <td>PS5 Xbox <br>series, PC</td>
-                <td>05/15/2025</td>
-              </tr>
-            </tbody>
-          </table>
-        </div> <!-- close box for MH table -->
-      </div> <!-- close second column -->
-
+  <button type="submit">Submit</button>
+</form>
   </main>
   <button id="scrollToTopBtn" class="scroll-to-top">↑</button>
   <footer class="footer399">
