@@ -95,6 +95,25 @@
     flex-direction: column;
     gap: 10px;
   }
+ .column-three {
+  background-image: url('Mobile-healthy.png'); 
+  background-size: cover;   
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 349px;
+  height: 95px;           /* Fixed height as you wanted */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;   
+  margin-top: 15px;    /* Prevent image from spilling out */
+}
+
+.game-health {
+  height: auto !important;
+  width: 100px !important;
+  margin-top: 30px;
+}
 
 .box {
   width: 100%;
@@ -103,14 +122,13 @@
   align-items: center;     /* center vertically if needed */
 }
   .hero-image {
-    border-right: 5px solid #000000; 
-    border-bottom: 5px solid #000000;
+    
     display: block;
     max-width: 100%;
     height: auto;
     margin-top: 20px;
-
   }
+
   video {
     box-sizing: border-box;
   }
@@ -318,15 +336,20 @@
   }
   .flex-row {display: none}
 }
+  .column-two {
+    border-bottom: 3px solid #ff07a4
+    
+  }
 @media screen and (min-width: 400px) and (max-width: 599px) {
   .hamburger {
     font-size: 55px;
   }
   .flex-row {display: none}
 }
+
   @media screen and (max-width: 599px) {
     .header {
-      height: 700px;
+      height: 755px;
       margin-bottom: 50px;
     }
  
@@ -506,7 +529,7 @@
 @media screen and (min-width: 600px) {
   .header {
     background-image: url("background-header-600.gif");
-    height: 608px;
+    height: 550px;
     margin: 0 auto;
     padding: 0;
   }
@@ -519,8 +542,29 @@
     }
      .styled-table2 {             /* Set total table width */
     width: 70%;
-    
   }
+.video-border {
+  border-bottom: 2px solid #ff07a4;
+  box-sizing: border-box;
+}
+  .game-health {
+  height: auto !important;
+  width: 100px !important;
+  margin-top: 60px;
+}
+ .column-four {
+  background-image: url('Mobile-healthy600.png'); 
+  background-size: cover;   
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 225px;
+  height: 128px;           /* Fixed height as you wanted */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;   
+  margin-top: 15px;    /* Prevent image from spilling out */
+}
     .logo-container {
     margin-left: 40px; /* Adjust this value as needed */
   }
@@ -546,7 +590,7 @@
       margin-top: -75px;
     
       align-items: center;
-      gap: 20px;}
+      gap: 10px;}
   .container600 img {
       width:420px;}
   .nav {
@@ -655,6 +699,7 @@
     height: 310px;
     justify-content: center;
     align-items: center;
+    
   }
 
   .column-one video {
