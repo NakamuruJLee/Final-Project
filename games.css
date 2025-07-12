@@ -346,15 +346,20 @@
       font-size: 55px;
     }
     .flex-row {display: none}
+ 
   }
+  
   .column-two {margin-left:30px;}
+    .flex-row1024 {
+        display: none;}
 
     @media screen and (max-width: 599px) {
       .header {
         height: 755px;
         margin-bottom: 50px;
       }
-  
+    .flex-row1024 {
+        display: none;}
     .hamburger {
         display: block;
       }
@@ -535,11 +540,18 @@
         min-width: 500px; 
         padding: 10px;
       }
+        .hero-image {
+      
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
       .styled-table2 {             /* Set total table width */
       width: 70%;
     }
   .video-border {
-    border-bottom: 2x solid #ff07a4; /* 3px thick, pink color */
+    border-bottom: 2px solid #ff07a4; /* 3px thick, pink color */
     box-sizing: border-box;
   }
     .game-health {
@@ -624,17 +636,20 @@
     @media screen and (min-width: 800px) {
   .header {
     background-image: url("Background_Header.gif");
-    min-height: 545px; /* Sets a minimum but allows to grow */
+    min-height: 595px; /* Sets a minimum but allows to grow */
     height: auto;
   }
 @media screen and (min-width: 800px) {
   .wrapper-1024 {
     width: 100%;
-    max-width: 1024px;  /* Keeps a nice max size */
-    margin: 0 auto;     /* Centered horizontally */
-    padding: 0 20px;    /* Optional: some side spacing */
+    max-width: 1024px;  
+    margin: 0 auto;     
+    padding: 0 20px;    
     box-sizing: border-box;
   }
+
+
+
 
   main {
     width: 100%;
@@ -660,22 +675,22 @@
     .nav {
         gap: 50px;
         font-size: 22px;
-        margin-top:-10px}
+        margin-top: 30px}
     .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     max-width: 100%;
-    padding: 0 20px;
+    padding: 0;
     box-sizing: border-box;
   }
-          .flex-row {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px; /* Adjust this value as needed */
-      gap: 20px;
-    }
+  .hero-image {
+  display: block;
+  width: 520px !important;
+  height: 329px !important;
+  margin-top: 20px;
+}
 
     .column-one {
       display: flex;
@@ -717,7 +732,95 @@
         display: none;}
       .container2 {
         display: none;}
-        .container600 {
-        display: none;}
+      
   }
+}
+
+@media screen and (min-width: 1024px) {
+.header {
+    background-image: url("background-header1900.gif");
+    height: 735px; 
+  }
+    .hero-image {
+  display: block;
+  width: 625px !important;
+  height: 420px !important;
+  margin-top: 20px;
+}
+.video-column video {
+  width: 325px; /* Sets the width of the video */
+  height: 200px; /* Sets the height of the video */
+}
+    .game-health {
+    margin-top: 95px !important;
+  }
+.column-four {
+    background-image: url('Mobile-healthy800.png'); 
+    background-size: cover;   
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 325px;
+    height: 200px;           /* Fixed height as you wanted */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;   
+    margin-top: 15px;    /* Prevent image from spilling out */
+  }
+
+
+.nav {
+    gap: 50px;
+    font-size: 26px;
+    margin-top: 20px;
+    margin-bottom: 30px;}
+
+   .flex-row1024 {
+      display: flex;
+      justify-content: center;
+      margin-top: 90px; /* Adjust this value as needed */
+      gap: 45px;
+    }
+
+
+.column-x {
+      display: flex;
+      width: auto;
+      background-color:transparent;
+      padding:0px;
+      height: 310px;
+        justify-content: center;
+      align-items: center;
+
+    }
+
+   .column-x img {
+    width: 625px; 
+    height: 420px; 
+    object-fit: cover;
+    display: block; 
+    margin: 0 auto; 
+  }
+    .column-y {
+      width:230px;
+      display: flex;
+      gap:10px;
+      flex-direction: column; /* makes nested items stack vertically */
+
+      background-color:transparent;
+      padding: 0px;
+      height: 310px;
+      justify-content: center;
+      align-items: center;
+    }
+    .container400 {
+    display: none;}
+    
+    .container800 {
+    display: none;}
+        .flex-row {
+    display: none;}
+    
+    
+
 }
