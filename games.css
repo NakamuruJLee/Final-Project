@@ -739,13 +739,23 @@
 @media screen and (min-width: 1024px) {
 .header {
     background-image: url("background-header1900.gif");
-    height: 735px; 
+    height: 715px; 
   }
     .hero-image {
   display: block;
   width: 625px !important;
   height: 420px !important;
   margin-top: 20px;
+}
+
+.container600 {
+    width: 100% !important; /* Ensure the container itself can stretch to 100% */
+    max-width: 1024px !important; /* This is the key: applies the 1024px limit */
+    margin-top: -85px !important;
+    gap: 35px;
+    /* You might want to add margin: 0 auto; to center it if it's not already */
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 .video-column video {
   width: 325px; /* Sets the width of the video */
