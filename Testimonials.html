@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pros and Cons of Gaming</title>
+     <meta name="description" content="Read testimonials from gamers sharing their personal experiences about the health effects of gaming." />
+    <title>Testimonials submitted by users</title>
     <link rel="stylesheet" href="games.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,78 +16,36 @@
     <link rel="preload" as="image" href="instagram-mobile-hover.gif">
     <link rel="preload" as="image" href="tik-tok-mobile-hover.gif">
  <style>
-  .feedback-form {
-  width: 100%;
-  max-width: 600px;
-  margin: 30px auto;
+  .custom-table {
+  margin-bottom: 0;
+}
+.flex-column-container {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  background-color: #000;
-  color: #fff;
-  padding: 20px;
-  box-sizing: border-box;
-  border: 2px solid #fff;
-  border-radius: 8px;
+  align-items: center; 
+
+  
+  min-height: 0;        
+  margin: 0;
+  padding: 0;
 }
 
-.feedback-form label {
-  font-weight: 600;
-  display: block;
-  margin-bottom: 5px;
-}
-
-.feedback-form input[type="text"],
-.feedback-form input[type="email"],
-.feedback-form select,
-.feedback-form textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #fff;
-  border-radius: 4px;
-  background: #222;
-  color: #fff;
-  box-sizing: border-box;
-}
-
-.feedback-form textarea {
-  resize: vertical;
-  min-height: 120px;
-}
-
-.feedback-form small {
-  color: #ccc;
-}
-
-.feedback-form button {
-  background-color: #fff;
-  color: #000;
-  padding: 12px;
-  font-size: 16px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.feedback-form button:hover {
-  background-color: #ff07a4;
-  color: #fff;
-}
-
-.feedback-form input[type="checkbox"] {
-  margin-right: 8px;
+.custom-table {
+  width: 80%;
+  text-align: center;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 480px) {
   .feedback-form {
     padding: 10px;
   }
+  
 .img-center-wrapper {
   display: flex;
-  justify-content: center; /* horizontal centering */
-
-  /* If you want it to take the full viewport height: */
+  justify-content: center; 
   height: 100vh;
   width: 100%;
   box-sizing: border-box;
@@ -108,13 +67,12 @@
   }
 
   .mobile-community {
-    width: 356px;
-    height: 356px;
+    width: 435px;
     margin: 10px 0 0 0;
   }
 
   .header {
-    height: 545px;
+    height: 640px;
   }
 }
 @media screen and (min-width: 600px) {
@@ -123,18 +81,39 @@
     justify-content: center;
     align-items: center;
   }
+.custom-table {
+  
+  margin-top: 24px;
+  margin-bottom: -10px;
+}
+  .mobile-community {
+    width: 476px;
+    
+    margin: 25px 0 0 0;
+  }
+
+  .header {
+    height: 745px;
+  }
+}
+
+@media screen and (min-width: 775px) {
+  .img-center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   .mobile-community {
-    width: 356px;
-    height: 356px;
+    width: 436px;
+    
     margin: 10px 0 0 0;
   }
 
   .header {
-    height: 645px;
+    height: 755px;
   }
 }
-
  </style>
 
   </head>
@@ -156,7 +135,7 @@
     <button class="close-btn" onclick="document.getElementById('mobileNav').classList.remove('active')">✕</button>
 <div class="container">
     <div class="contactpng">
-      <a href="mailto:jang@lee.com"><img src="Contact.png" alt="Contact button"></a>
+      <a href="contact.html"><img src="Contact.png" alt="Contact button"></a>
     </div>
     <div>
       <img src="Logo.png" alt="Logo for Game on/off" class="logo">
@@ -246,7 +225,7 @@
     <div ">
       <div class="img-center-wrapper">
   <img
-    src="form-group-mobile.gif"
+    src="form-group-mobile2.gif"
     alt="community"
     class="mobile-community"
   >
@@ -335,52 +314,59 @@
   </header>
 
   <main>
-    <form class="feedback-form" action="#" method="post">
-  <label>
-    <input type="checkbox" name="anonymous"> Submit anonymously
-  </label>
+<div class="flex-column-container">
+  <table border="4" class="custom-table">
+    <colgroup>
+      <col style="width: 20%;">
+      <col style="width: 80%;">
+    </colgroup>
+    <tr>
+      <td rowspan="2">
+  <img src="face1.gif" alt="face avatar" style="width:100px; height:auto;">
+</td>
+      <td>John Doe</td>
+    </tr>
+    <tr>
+      <td>Gaming made me little crazy. Please help.</td>
+    </tr>
+  </table>
+</div>
+<div class="flex-column-container">
+  <table border="4" class="custom-table">
+    <colgroup>
+      <col style="width: 20%;">
+      <col style="width: 80%;">
+    </colgroup>
+    <tr>
+      <td rowspan="2">
+  <img src="face3.gif" alt="face avatar" style="width:100px; height:auto;">
+</td>
+      <td>Jane Doe</td>
+    </tr>
+    <tr>
+      <td>Gaming made me less crazy. I don't need any help.</td>
+    </tr>
+  </table>
+  </table>
+</div>
+<div class="flex-column-container">
+  <table border="4" class="custom-table">
+    <colgroup>
+      <col style="width: 20%;">
+      <col style="width: 80%;">
+    </colgroup>
+    <tr>
+      <td rowspan="2">
+  <img src="face2.gif" alt="face avatar" style="width:100px; height:auto;">
+</td>
+      <td>Alien Doe</td>
+    </tr>
+    <tr>
+      <td>Gaming made me accept who I am. Seems I'm very popular in games.</td>
+    </tr>
+  </table>
 
-  <div class="form-group">
-    <label for="firstName">First Name:</label>
-    <input type="text" id="firstName" name="firstName" required>
-  </div>
-
-  <div class="form-group">
-    <label for="lastInitial">Last Name Initial:</label>
-    <input type="text" id="lastInitial" name="lastInitial" maxlength="1" required>
-  </div>
-
-  <div class="form-group">
-    <label for="country">Country:</label>
-    <select id="country" name="country" required>
-      <option value="">-- Select Country --</option>
-      <option value="United States">United States</option>
-      <option value="India">India</option>
-      <option value="China">China</option>
-      <option value="Brazil">Brazil</option>
-      <option value="Indonesia">Indonesia</option>
-      <option value="Russia">Russia</option>
-      <option value="Japan">Japan</option>
-      <option value="Mexico">Mexico</option>
-      <option value="Germany">Germany</option>
-      <option value="United Kingdom">United Kingdom</option>
-      <option value="Other">Other</option>
-    </select>
-  </div>
-
-  <div class="form-group">
-    <label for="email">Email (optional):</label>
-    <input type="email" id="email" name="email">
-  </div>
-
-  <div class="form-group">
-    <label for="comment">Comment (150 words max):</label>
-    <textarea id="comment" name="comment" maxlength="1500" placeholder="Your comment here..."></textarea>
-    <small>(Approx. 150 words)</small>
-  </div>
-
-  <button type="submit">Submit</button>
-</form>
+</div>
   </main>
   <button id="scrollToTopBtn" class="scroll-to-top">↑</button>
   <footer class="footer399">
@@ -439,6 +425,7 @@
 
     <div class="copyright">
       <p>&copy; 2024 Game On/Off</p>
+      <a href="mailto:jang@lee.com">Email Us</a>
     </div>
 
 
@@ -446,7 +433,7 @@
 
   <script>
 
-    // Mobile nav toggle
+    
     const hamburger = document.getElementById('hamburger');
     const mobileNav = document.getElementById('mobileNav');
     const closeBtn = document.querySelector('.close-btn');
